@@ -1,112 +1,70 @@
 # WordPress-Installer
-WordPress Docker Auto Installer
-WordPress Docker Auto Installer
+# WordPress Docker Auto Installer
 
 A Bash script for fast, automated deployment of WordPress on a clean server using Docker Compose.
 The script provisions a complete WordPress stack in a single run with minimal manual input.
 
-What the script does
+# What the script does
 
-The script automatically:
+# The script automatically:
 
 Downloads and extracts the latest WordPress release
-
 Sets correct file ownership and permissions
 
-Generates secure random credentials for:
-
+# Generates secure random credentials for:
 MySQL root password
-
 WordPress database name
-
 WordPress database user
-
 WordPress database password
 
-Prompts the user for:
+# Prompts the user for:
 
 Domain name
-
 Site title
-
 WordPress admin credentials
 
-Dynamically creates:
-
+# Dynamically creates:
 PHP 8.2 FPM Dockerfile
-
 docker-compose.yaml
-
 Nginx virtual host configuration
-
 Custom MySQL server.cnf
 
-Launches Docker containers:
+# Launches Docker containers:
 
 MySQL 8
-
 PHP-FPM 8.2
-
 Nginx
-
 Redis
 
 Installs WP-CLI inside the PHP container
-
 Generates wp-config.php
 
 Installs WordPress via WP-CLI
-
 After execution, a fully functional WordPress site is available immediately.
 
-Stack
-
+# Stack
 Docker / Docker Compose
-
 Nginx
-
 PHP 8.2 (FPM)
-
 MySQL 8
-
 Redis
-
 WordPress (latest)
-
 WP-CLI
 
-Requirements
+# Requirements:
 
-Linux server (Ubuntu / Debian recommended)
+Clean Linux server 
 
 Installed:
-
 Docker
-
 Docker Compose
-
 Root or sudo privileges
 
-Usage
+# Usage
 chmod +x install.sh
 ./install.sh
 
-
-During execution you will be prompted for:
-
-Domain name (without http://)
-
-Site title
-
-WordPress admin login, password, and email
-
-At the end, the script prints:
-
-Website URL
-
-Admin login credentials
-
-Directory layout
+# Directory layout
 /home/
 ├── wordpress/        # WordPress files
 ├── db/               # MySQL data
@@ -115,26 +73,13 @@ Directory layout
 ├── nginx.conf
 └── server.cnf
 
-Features
-
+# Features: 
 Fully automated WordPress installation
-
 Secure random credentials generation
-
 Persistent MySQL storage
-
 Minimal user interaction
-
 Ideal for quick setup or development environments
 
-Notes
-
-HTTPS / SSL is not configured
-
-Designed for a single WordPress site
-
-Not production-ready without further hardening
-
-License
+# License
 
 MIT
