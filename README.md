@@ -65,6 +65,7 @@ chmod +x install.sh
 ./install.sh
 
 # Directory layout
+```text
 /home/
 ├── wordpress/        # WordPress files
 ├── db/               # MySQL data
@@ -72,6 +73,7 @@ chmod +x install.sh
 ├── php-fpm-dockerfile
 ├── nginx.conf
 └── server.cnf
+```
 
 # Features: 
 Fully automated WordPress installation
