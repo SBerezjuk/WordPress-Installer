@@ -53,7 +53,7 @@ WP-CLI
 
 # Requirements:
 
-Clean Linux server 
+Clean Linux server (Almalinux, Centos)
 
 Installed:
 Docker
